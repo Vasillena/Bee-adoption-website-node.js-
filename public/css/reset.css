@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: rgb(229, 228, 228);
+}
+
+body {
+  background-color: black;
+  color: rgb(230, 230, 230);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(227, 227, 227);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  font-size: 0.8em;
+}
+
+button {
+  all: unset;
+  padding: 0.3em;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  all: unset;
+  text-align: center;
+  width: 18em;
+  padding: 1em;
+  border-bottom: 2px solid white;
+}
+
+.submit-button {
+  width: 6em;
+  cursor: pointer;
+}

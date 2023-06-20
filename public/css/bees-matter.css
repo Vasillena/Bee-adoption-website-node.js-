@@ -1,0 +1,46 @@
+.title-section h1,
+.paragraphs-first-row,
+.paragraphs-second-row {
+  animation: sliderReveal 1s ease forwards;
+}
+
+.title-section h1 {
+  position: absolute;
+  margin-top: 5.2em;
+  margin-left: 5.3em;
+  font-family: "Anton", sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  z-index: 1;
+}
+
+.hex {
+  background: url(/static/images/hex.png);
+  background-size: 90% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24em;
+  height: 24em;
+}
+
+.paragraph {
+  width: 18em;
+  text-align: center;
+  margin-left: 3em;
+  margin-top: 5.5em;
+}
+
+.paragraphs-first-row {
+  display: flex;
+  margin-left: 2em;
+  margin-top: 2em;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.paragraphs-second-row {
+  display: flex;
+  margin-left: 14em;
+  opacity: 0;
+  animation-delay: 1s;
+}

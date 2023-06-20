@@ -1,0 +1,62 @@
+.forms {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Anton", sans-serif;
+}
+
+.signup,
+.login {
+  height: 34em;
+  width: 20em;
+  background: white;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  animation: sliderReveal 1s ease forwards;
+}
+
+.forms h3 {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  padding: 0.8em 0;
+  font-weight: bold;
+}
+
+.forms input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 1.5em;
+  margin: 0.8em auto;
+  padding: 0.8em;
+  font-size: 1em;
+  color: black;
+}
+
+.forms .submit {
+  font-size: 1.5em;
+  height: 2em;
+  font-weight: bold;
+  color: black;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.forms p {
+  text-align: center;
+  color: black;
+  margin-top: 1em;
+}
+
+.forms p > a {
+  all: unset;
+  font-family: "Anton", sans-serif;
+  color: black;
+  font-size: 1em;
+  text-decoration: underline;
+}

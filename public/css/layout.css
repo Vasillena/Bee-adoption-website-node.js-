@@ -1,0 +1,92 @@
+#site {
+  max-width: 1800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2em 2em;
+  background-color: black;
+  border-bottom: 0.1px solid white;
+}
+
+.home-link {
+  font-family: "Anton", sans-serif;
+  letter-spacing: normal;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-right: 6em;
+  order: 2;
+}
+
+.hello-user {
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 0.7em;
+  order: 1;
+}
+
+.login-logout-link {
+  order: 3;
+}
+
+.header {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.6em 2em;
+}
+
+.navbar-link {
+  position: relative;
+  max-width: max-content;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+}
+
+.navbar-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  border-block: 1px solid hsl(39, 83%, 84%);
+  transform: scaleX(0.2);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.navbar-link:is(:hover, :focus-visible)::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-top: 0.1px solid white;
+}
+
+.footer-list {
+  display: flex;
+  gap: 22em;
+}
+
+.github-link {
+  color: wheat;
+}

@@ -1,0 +1,29 @@
+<main>
+  <section class="our-honey">
+  <style>
+    #site {
+      background: url(/static/images/our-honey.png);
+      background-size: 90% auto;
+      background-position: left -3em;
+      background-repeat: no-repeat;
+    }
+  </style>
+    <div class="title">
+      <h1>NATURAL AND PURE</h1>
+    </div>
+    <div class="product-container">
+    <div class="product-section">
+      {{#times 4}}
+        {{>honeyTemplate}}
+      {{/times}}
+    </div>
+        <div class="img-container">
+      <img
+        src="/static/images/honey-jar.png"
+        alt="Honey jar image"
+        class="honey-jar-img"
+      />
+    </div>
+    </div>
+  </section>
+</main>

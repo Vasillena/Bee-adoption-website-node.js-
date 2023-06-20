@@ -1,0 +1,32 @@
+<main>
+    <section
+  class="my-beehive"
+>
+  <style>
+    #site {
+      background: url(/static/images/my-beehive.png);
+      background-size: 30% auto;
+      background-position: left 15em;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <div class="my-beehive-section">
+    <div class="my-beehive-title">
+      <h1>WELCOME TO OUR FAMILY</h1>
+    </div>
+    <div class="my-beehives-table">
+      <div class="single-beehive">
+        {{#if beehive}}
+       {{#each beehive}}
+       {{>beehiveCard}}
+       {{/each}}
+       {{else}}
+          <h2>No beehives yet.</h2>
+              <br />
+              <a href="/adoptBeehive/adoption" class="adopt-link">ADOPT NOW</a>
+              {{/if}}
+      </div>
+    </div>
+  </div>
+</section>
+</main>

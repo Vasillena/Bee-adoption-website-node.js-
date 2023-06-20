@@ -1,0 +1,50 @@
+<main>
+  <section class="my-beehive">
+    <style>
+      #site { background: url(/static/images/my-beehive.png); background-size:
+      30% auto; background-position: left 15em; background-repeat: no-repeat; }
+    </style>
+    <div class="my-beehive-section">
+      <div class="my-beehive-title">
+        <h1>WELCOME TO OUR FAMILY</h1>
+      </div>
+      <div class="my-beehives-table">
+        <div class="single-beehive">
+          <div class="beehive-card">
+            <img
+              class="beehive"
+              src="/static/images/beehive.png"
+              alt="Beehive"
+              width="680"
+            />
+            <h3>{{beehive.username}}'s Beehive</h3>
+            <p>{{beehive.address}}</p>
+            <p>Beehive name: {{beehive.beehiveName}}</p>
+            <p>Queen Bee name: {{beehive.queenName}}</p>
+            <p>Honey label:</p>
+            <br />
+            <img
+              class="label"
+              src="{{beehive.honeyLabel}}"
+              alt="Honey Label"
+              width="200"
+            />
+            <div class="action-buttons">
+              <a
+                href="/myBeehive/{{beehive._id}}/edit"
+                class="action-link"
+              >Edit</a>
+              <br />
+              <br />
+              <a
+                href="/myBeehive/{{beehive._id}}/delete"
+                class="action-link"
+              >Cancel Adoption</a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

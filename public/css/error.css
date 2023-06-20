@@ -1,0 +1,74 @@
+.not-found-img {
+  position: fixed;
+  width: 35rem;
+  top: 1rem;
+  left: 3rem;
+  z-index: -1;
+}
+
+.not-found-page-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.not-found-page-container h1 {
+  font-size: 6rem;
+}
+
+.errorContainer {
+  position: fixed;
+  right: 6rem;
+  min-width: 6rem;
+  display: block;
+  z-index: 1;
+  top: 3.5rem;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  border-radius: 1.25rem;
+  color: black;
+  height: auto;
+  width: 20rem;
+}
+
+.errorContainer > p {
+  background: white;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.errorContainer {
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+}

@@ -1,0 +1,46 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 16em 4em;
+}
+
+.contact-section {
+  width: 30rem;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  animation: sliderReveal 1s ease forwards;
+}
+
+.contact-section-form {
+  margin-right: 2em;
+}
+
+.contact-section p {
+  font-size: 1.5em;
+  opacity: 0;
+  animation: sliderReveal 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.sent-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+  width: 30em;
+  height: auto;
+  background-color: black;
+  padding: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
